@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css"></link>
+    </head>
+    <body>
+        <div class="form-container"> 
+            <div class="title"><h1>Student Registration Form</h1></div>
+            <form onsubmit="return validateForm(event)">     
+                <!-- on submit is a attribute that calls a function which will validate the data -->
+                 <!-- if you want to submit the form data to some other form or srver say then you will have to use the action attribute -->
+            <div class="form-content">
+
+                <label for="first-name">First Name: </label>
+                <input id="first-name" name="first-name" placeholder="eg: John">
+                <label for="last-name">Last Name: </label>
+                <input  id="last-name" name="last-name" placeholder="eg: Doe">
+                <label for="age">Age: </label>
+                <input id="age" name="age" placeholder="eg:87">
+                <label for="email">Email Id: </label>
+                <input id="email" name="email" type="email" placeholder="eg:johndoe@gmail.com">
+                <label for="gender">Gender: </label>
+                <input type="radio" value="female" name="gender" id="female" class="female">
+                <label for="female" class="label-gender">Female</label>
+                <input type="radio" value="male" name="gender" id="male" class="male">
+                <label for="male" class="label-gender">Male</label>
+                <label for="language">Languages Spoken: </label>
+                <input type="checkbox" name="language1" value="hindi" id="hindi">
+                <label for="hindi" >Hindi</label>
+                <input type="checkbox" name="language2" value="english" id="english">
+                <label for="english">English</label>
+                <label for="description">Description: </label>
+                <textarea id="description" name="description" ></textarea>
+                <label for="state">Select State: </label>
+                <select id="state" name="state">
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+
+                </select>
+                <button type="submit" >Submit</button>
+            </div>
+            </form>
+        </div>
+    <script src="index.js"></script>
+    </body>
+    </html>
